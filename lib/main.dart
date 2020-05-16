@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
+import 'app_classes/first_screen.dart';
+import 'app_classes/login_screen.dart';
+
 void main() {
-  runApp(MaterialApp(
+  runApp(FisrtApp());
+}
+
+class FisrtApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "My Fltter App",
       home: Scaffold(
-        appBar: AppBar(title: Text("App Bar Title")),
-        body: Material(
-            color: Colors.lightBlue,
-            child: Center(
-              child: Text(
-                "Hello flutter",
-                textDirection: TextDirection.ltr,
-                style: TextStyle(color: Colors.white, fontSize: 40.0),
-              ),
-            )),
-      )));
+          body: Container(child: LoginScreen())),
+    );
+  }
 }
