@@ -5,7 +5,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-            color: Colors.black,
+            color: Color.fromRGBO(58, 66, 86, 1.0),
             padding: EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -54,4 +54,5 @@ class LoginScreen extends StatelessWidget {
   getTextStyle(Color color) {
     return TextStyle(fontFamily: 'Verdana', fontSize: 20.0, color: color);
   }
+
 }
